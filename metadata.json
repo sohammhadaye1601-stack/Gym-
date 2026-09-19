@@ -1,0 +1,6 @@
+{
+  "name": "Fitness Club™",
+  "description": "Fitness Club™ is a modern gym with a two-floor facility, well-maintained equipment and a comfortable training environment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

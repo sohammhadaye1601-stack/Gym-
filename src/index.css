@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Outfit', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    --font-hindi: 'Noto Sans Devanagari', sans-serif;
+  }
+
+  /* THEME 01: DARK POWER (Default) */
+  :root, body, .theme-dark-power {
+    --bg-main: #0b0c10;
+    --bg-surface: #12141a;
+    --bg-card: #161821;
+    --bg-card-hover: #1e212d;
+    --bg-input: #1a1d26;
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-highlight: rgba(255, 94, 20, 0.5);
+    --text-primary: #ffffff;
+    --text-secondary: #9ca3af;
+    --text-muted: #6b7280;
+    --accent: #ff5e14;
+    --accent-hover: #ff7530;
+    --accent-glow: rgba(255, 94, 20, 0.25);
+    --accent-contrast: #ffffff;
+    --badge-bg: rgba(255, 94, 20, 0.12);
+    --badge-text: #ff7530;
+    --stat-border: rgba(255, 255, 255, 0.07);
+    --nav-bg: rgba(11, 12, 16, 0.88);
+  }
+
+  /* THEME 02: BLACK & GOLD */
+  .theme-black-gold {
+    --bg-main: #09090b;
+    --bg-surface: #111215;
+    --bg-card: #15161b;
+    --bg-card-hover: #1d1e25;
+    --bg-input: #1a1b22;
+    --border-subtle: rgba(229, 185, 76, 0.18);
+    --border-highlight: rgba(229, 185, 76, 0.55);
+    --text-primary: #ffffff;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+    --accent: #e5b94c;
+    --accent-hover: #f3cb69;
+    --accent-glow: rgba(229, 185, 76, 0.25);
+    --accent-contrast: #09090b;
+    --badge-bg: rgba(229, 185, 76, 0.14);
+    --badge-text: #f0c55d;
+    --stat-border: rgba(229, 185, 76, 0.16);
+    --nav-bg: rgba(9, 9, 11, 0.90);
+  }
+
+  /* THEME 03: CLEAN FITNESS */
+  .theme-clean-fitness {
+    --bg-main: #f8fafc;
+    --bg-surface: #ffffff;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f1f5f9;
+    --bg-input: #f1f5f9;
+    --border-subtle: rgba(15, 23, 42, 0.09);
+    --border-highlight: rgba(234, 88, 12, 0.4);
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
+    --accent: #ea580c;
+    --accent-hover: #c2410c;
+    --accent-glow: rgba(234, 88, 12, 0.2);
+    --accent-contrast: #ffffff;
+    --badge-bg: rgba(234, 88, 12, 0.1);
+    --badge-text: #c2410c;
+    --stat-border: rgba(15, 23, 42, 0.1);
+    --nav-bg: rgba(248, 250, 252, 0.92);
+  }
+
+  /* THEME 04: GRAPHITE RED */
+  .theme-graphite-red {
+    --bg-main: #121417;
+    --bg-surface: #181b20;
+    --bg-card: #1c2027;
+    --bg-card-hover: #252b34;
+    --bg-input: #232731;
+    --border-subtle: rgba(255, 255, 255, 0.09);
+    --border-highlight: rgba(239, 35, 60, 0.5);
+    --text-primary: #ffffff;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --accent: #ef233c;
+    --accent-hover: #ff3850;
+    --accent-glow: rgba(239, 35, 60, 0.25);
+    --accent-contrast: #ffffff;
+    --badge-bg: rgba(239, 35, 60, 0.15);
+    --badge-text: #ff4d64;
+    --stat-border: rgba(255, 255, 255, 0.08);
+    --nav-bg: rgba(18, 20, 23, 0.90);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    transition: background-color 0.25s ease, color 0.25s ease;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+
+  .font-hindi {
+    font-family: var(--font-hindi);
+  }
+}
+
+/* Custom Utilities mapping to CSS variables */
+.bg-theme-main { background-color: var(--bg-main); }
+.bg-theme-surface { background-color: var(--bg-surface); }
+.bg-theme-card { background-color: var(--bg-card); }
+.bg-theme-input { background-color: var(--bg-input); }
+.bg-theme-accent { background-color: var(--accent); }
+.text-theme-primary { color: var(--text-primary); }
+.text-theme-secondary { color: var(--text-secondary); }
+.text-theme-muted { color: var(--text-muted); }
+.text-theme-accent { color: var(--accent); }
+.text-theme-contrast { color: var(--accent-contrast); }
+.border-theme-subtle { border-color: var(--border-subtle); }
+.border-theme-highlight { border-color: var(--border-highlight); }
+.border-theme-accent { border-color: var(--accent); }
